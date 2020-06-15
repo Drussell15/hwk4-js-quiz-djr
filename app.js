@@ -35,3 +35,14 @@ timer.addEventListenr("click",function () {
   }
   render(questionIndex);
 });
+//next section renders questions and choices to page
+function render(questionIndex) {
+  //clear out existing data
+  questionsDiv.innerHTML= "";
+  ulCreate.innerHTML= "";
+  //for loops to loop through all the information in an array
+  for (var i=0; i <questions.length; i++) {
+    //append question titles
+    var userQuestions= questions[questionsIndex].title;
+    var userChoices= question[questionsIndex].choices;
+    
