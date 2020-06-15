@@ -45,4 +45,17 @@ function render(questionIndex) {
     //append question titles
     var userQuestions= questions[questionsIndex].title;
     var userChoices= question[questionsIndex].choices;
+    questionsDiv.textContent= userQuestion;
+  }
+  //new for each question choices
+  userChoices.forEach(function (newItem) {
+    var listItem = document.createElement("li");
+    listItem.textContent= newItem;
+    questionsDiv.appendChild(ulCreate);
+    ulCreate.appendChild(listItem);
+    listItem.addEventListener("click", (compare));
+  })
+}
+//event to compare choice with answer
+    
     
