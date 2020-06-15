@@ -17,3 +17,21 @@ var penalty= 10;
 //create new element
 var ulCreate= document.createElement("ul");
 
+//trigger timer on button click show user on screen
+timer.addEventListenr("click",function () {
+  //timer originally set to zero, check if its zero
+  if (holdInterval ===0) {
+    holdInterval= setInterval(function () {
+      secondsLeft--;
+      currentTime.textContent= "Time:  " + secondsLeft;
+      
+      
+     if (secondsLeft <= 0) {
+       clearInterval(holdInterval);
+       allDone();
+       currentTime.text.Content= "Time's up!";
+     }
+    }, 1000);
+  }
+  render(questionIndex);
+});
