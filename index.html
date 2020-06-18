@@ -7,6 +7,7 @@
     <title>Coding the Quiz!</title>
     <link rel="stylesheet" href="./Assets/style.css" />
 </head>
+
 <body>
     <div class="container">
         <div id="timer">
@@ -19,26 +20,42 @@
             <p> press start button to begin quiz</p>
             <button id="start-quiz" class="btn">Start Quiz</button>
         </div>
-<!-- quiz section goes here-->
+        <!-- quiz section goes here-->
+        <section id="quiz" class="hidden">
+            <div id="question">
+                <p> Question: </p>
+            </div>
+            <!-- choices are below-->
+            <div id="choices">
+                <!-- when user clicks on "a,b,c,d" check for answer-->
+                <button class="choice" id="A">A</button>
+                <br>
+                <button class="choice" id="B">B</button>
+                <br>
+                <button class="choice" id="C">C</button>
+                <br>
+                <button class="choice" id="D">D</button>
+                <br>
+            </div>
+            <button id="next" class="btn">Next</button>
+            <div id="answer-value">
+                <h4 id="correct" class="hidden">Correct!</h4>
+                <h4 id="incorrect" class="hidden">incorrect</h4>
+            </div>
+        </section>
+        <!-- finished and scoring-->
+        <section id="finalScores" class="hidden">
+            <h1> MISSION COMPLETE!</h1>
+            <!-- initials entered by user then submit-->
+            <form id="hs-form" method="POST">
+                <h4> your score: <span id="score"></span></h4>
+                <label for="initials-text">Enter your initials USER:</label>
+                <input type="text" name="initials-text" id="initials-text" />
+                <button id="submit">SUBMIT</button>
+            </form>
+        </section>
     </div>
-        <!--quiz content -->
-        <div id="questionsDiv">
-            <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
-                answers
-                will penalize your score/time by ten seconds!</p>
-            <ul id="choicesUl"></ul>
-            <!-- Buttons -->
-            <button id="startTime">Start Quiz</button>
-        </div>
-
-    </div>
-
-
-    <script src="questions.js"></script>
-
-
+    <script src="./Assets/script.js"></script>
 </body>
 
 </html>
-
