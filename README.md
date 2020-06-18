@@ -1,4 +1,5 @@
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. Build a timed code quiz with multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+Code-quiz-HW4
+User story for assignment:
 
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
@@ -17,6 +18,17 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
+
+talking through the tasks:
+need a start page- with button to begin
+timer needs to begin as soon as start cicked
+timer needs to count down from set time to zero
+when answer is clicked, then move to next question until quiz completed
+when timer reaches zero-game over
+answer wrong= time penalty
+answer correctn+ no change
+at end- user enters intials like old school pacman
+enter initials, save and push to file- save in local storeage
 
 summary of project:
 use html,css and javascript to create quiz i multiple choice format.
