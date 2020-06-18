@@ -1,2 +1,93 @@
-style.css
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-align: center;
+}
 
+#startPage {
+    padding-top: 70px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+   
+    font-size: 20px;
+}
+
+.btn {
+    background-color: rgb(39, 39, 122);
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 10px 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#question {
+    padding-top: 70px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.choice {
+    text-align: center;
+    padding-top: 15px;
+}
+
+#finalScores {
+    padding-top: 70px;
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+
+.btn02 {
+    background-color: rgb(39, 39, 122);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    margin: 16px 16px 16px 20px;
+    padding: 10px 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#correct {
+    text-align: center;
+}
+
+#incorrect {
+    text-align: center;
+}
+
+.choice {
+    background-color: rgb(206, 206, 221);
+    padding: 10px;
+    margin-top: 20px; 
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+  }
