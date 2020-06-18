@@ -7,17 +7,20 @@
     <title>Coding the Quiz!</title>
     <link rel="stylesheet" href="./Assets/style.css" />
 </head>
-
-    <!-- This is the title-->
-    <title>Code Quiz</title>
-</head>
 <body>
-    <!-- Link to highscores -->
-    <a href="HighScores.html">View Highscores</a>
-    <!--wrapper -->
-    <div id="wrapper">
-        <!-- timer -->
-        <div id="currentTime"></div>
+    <div class="container">
+        <div id="timer">
+            <!-- timer starts at 500 sec-->
+            <div id="counter">500</div>
+        </div>
+        <!-- first page default-->
+        <div id="startPage">
+            <h1> Take the coding Quiz</h1>
+            <p> press start button to begin quiz</p>
+            <button id="start-quiz" class="btn">Start Quiz</button>
+        </div>
+<!-- quiz section goes here-->
+    </div>
         <!--quiz content -->
         <div id="questionsDiv">
             <h1>Coding Quiz Challenge</h1>
